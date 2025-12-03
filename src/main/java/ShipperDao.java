@@ -28,7 +28,7 @@ public class ShipperDao {
 
             int rows = preparedStatement.executeUpdate();
 
-            if (rows > 1) {
+            if (rows > 1 || rows == 0) {
                 System.out.println(rows + " records were added.\n");
             } else {
                 System.out.println(rows + " record was added.\n");
@@ -74,7 +74,7 @@ public class ShipperDao {
 
             int rows = preparedStatement.executeUpdate();
 
-            if (rows > 1) {
+            if (rows > 1 || rows == 0) {
                 System.out.println(rows + " records were updated.\n");
             } else {
                 System.out.println(rows + " record was updated.\n");
@@ -94,7 +94,7 @@ public class ShipperDao {
 
             int rows = preparedStatement.executeUpdate();
 
-            if (rows > 1) {
+            if (rows > 1 || rows == 0) {
                 System.out.println(rows + " records were removed.\n");
             } else {
                 System.out.println(rows + " record was removed.\n");
